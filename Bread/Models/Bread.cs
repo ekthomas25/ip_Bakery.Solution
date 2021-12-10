@@ -1,4 +1,4 @@
-namespace Bakery
+namespace Bakery.Models
 {
   public class Bread
   {
@@ -7,6 +7,9 @@ namespace Bakery
 }
 
 /*
+
+Need a bread object to store name and price
+need a GetPrice method
 
 Need to use modulo
  - (if numberOfLoaves divisible by 3) then ()
