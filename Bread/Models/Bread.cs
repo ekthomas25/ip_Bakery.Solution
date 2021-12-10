@@ -5,12 +5,12 @@ namespace Bakery.Models
 {
 public class Bread
   {
-    public string BreadType { get; }
+    public int BreadQuantity { get; }
     public int BreadPrice { get; }
-    public Bread(string breadType, int breadPrice)
+    public Bread(int breadQuantity, int breadPrice)
     {
-      BreadType = breadType;
-      BreadPrice = breadPrice;
+      BreadQuantity = breadQuantity;
+      BreadPrice = 5;
     }
 
     public int GetBreadCost()
