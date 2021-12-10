@@ -1,5 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Bakery.Models;
+using System.Collections.Generic;
+using System;
 
 namespace Bakery.Tests
 {
@@ -9,7 +11,7 @@ namespace Bakery.Tests
     [TestMethod]
     public void BreadConstructor_CreateInstanceOfBread_Bread()
     {
-      Bread newBread = new Bread();
+      Bread newBread = new Bread("Baguette");
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
     [TestMethod]
@@ -19,7 +21,7 @@ namespace Bakery.Tests
       string breadType = "Baguette";
       Bread newBread = new Bread(breadType);
       // Act - Invoke functionality: ie call method, retrieve property, etc
-      string result = newBread.breadType;
+      string result = newBread.BreadType;
       //Assert - Confirm functionality works: compare actual output to expected output
       Assert.AreEqual(breadType, result);
     }

@@ -1,8 +1,15 @@
+using System.Collections.Generic;
+using System;
+
 namespace Bakery.Models
 {
-  public class Bread
+public class Bread
   {
-
+    public string BreadType { get; }
+    public Bread(string breadType)
+    {
+      BreadType = breadType;
+    }
   }
 }
 
