@@ -46,7 +46,6 @@ namespace Bakery.Tests
       string breadType = "Baguette";
       int breadPrice = 5;
       int expectedCost = 0;
-      int quantity = 0;
       Bread newBread = new Bread(breadType, breadPrice);
       // Act - Invoke functionality: ie call method, retrieve property, etc
       int actualCost = newBread.GetBreadCost();
