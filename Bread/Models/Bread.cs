@@ -15,7 +15,7 @@ public class Bread
 
     public int GetBreadCost()
     {
-      return -1;
+      return 0;
     }
   }
 }
