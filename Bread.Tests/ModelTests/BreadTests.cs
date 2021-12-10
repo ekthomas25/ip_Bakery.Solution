@@ -57,7 +57,7 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void GetBreadCost_CostOfOneLoaf_IntOne()
+    public void GetBreadCost_CostOfOneLoaf_IntFive()
     {
        //   //Arrange - Gather, declate, create: necessary components for test
       int breadQuantity = 1;
@@ -70,6 +70,22 @@ namespace Bakery.Tests
     //   //Assert - Confirm functionality works: compare actual output to expected output
       Assert.AreEqual(expectedCost, actualCost);
     }
+
+    [TestMethod]
+    public void GetBreadCost_CostOfThreeLoaves_IntTen()
+    {
+       //   //Arrange - Gather, declate, create: necessary components for test
+      int breadQuantity = 3;
+      int breadPrice = 5;
+      Bread newBread = new Bread(breadQuantity, breadPrice);
+      int expectedCost = 10;
+
+    //   // Act - Invoke functionality: ie call method, retrieve property, etc
+    int actualCost = newBread.GetBreadCost();
+    //   //Assert - Confirm functionality works: compare actual output to expected output
+      Assert.AreEqual(expectedCost, actualCost);
+    }
+
   }
 }
 

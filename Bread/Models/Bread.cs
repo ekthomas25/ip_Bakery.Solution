@@ -15,7 +15,14 @@ public class Bread
 
     public int GetBreadCost()
     {
+      if (BreadQuantity > 0 && BreadQuantity % 3 == 0)
+      {
+        return 5;
+      }
+      else
+      {
       return BreadPrice * BreadQuantity;
+      }
     }
   }
 }
