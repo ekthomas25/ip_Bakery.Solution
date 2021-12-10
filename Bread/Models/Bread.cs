@@ -13,7 +13,10 @@ public class Bread
       BreadPrice = breadPrice;
     }
 
-    
+    public int GetBreadCost()
+    {
+      return -1;
+    }
   }
 }
 
