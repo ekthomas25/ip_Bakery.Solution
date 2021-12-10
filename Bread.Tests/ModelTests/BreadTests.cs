@@ -15,7 +15,7 @@ namespace Bakery.Tests
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
     [TestMethod]
-    public void GetBread_ReturnBreadType_Int()
+    public void GetBread_ReturnBreadQuantity_Int()
     {
       //Arrange - Gather, declate, create: necessary components for test
       int breadQuantity = 8;
@@ -27,18 +27,23 @@ namespace Bakery.Tests
       Assert.AreEqual(breadQuantity, result);
     }
 
-    // [TestMethod]
-    // public void GetBread_ReturnBreadPrice_Int()
-    // {
-    //   //Arrange - Gather, declate, create: necessary components for test
-    //   string breadType = "Baguette";
-    //   int breadPrice = 5;
-    //   Bread newBread = new Bread(breadType, breadPrice);
-    //   // Act - Invoke functionality: ie call method, retrieve property, etc
-    //   int resultPrice = newBread.BreadPrice;
-    //   //Assert - Confirm functionality works: compare actual output to expected output
-    //   Assert.AreEqual(breadPrice, resultPrice);
-    // }
+    [TestMethod]
+    public void GetBread_ReturnBreadPrice_Int()
+    {
+      //Arrange - Gather, declate, create: necessary components for test
+      int breadQuantity = 8;
+      int breadPrice = 5;
+      Bread newBread = new Bread(breadQuantity, breadPrice);
+
+      // Act - Invoke functionality: ie call method, retrieve property, etc
+      int resultPrice = newBread.BreadPrice;
+
+      //Assert - Confirm functionality works: compare actual output to expected output
+      Assert.AreEqual(breadPrice, resultPrice);
+    }
+
+
+
     // [TestMethod]
     // public void GetBreadCost_CostOfNoBread_IntZero()
     // {

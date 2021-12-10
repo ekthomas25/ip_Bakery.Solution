@@ -10,7 +10,7 @@ public class Bread
     public Bread(int breadQuantity, int breadPrice)
     {
       BreadQuantity = breadQuantity;
-      BreadPrice = 5;
+      BreadPrice = 0;
     }
 
     public int GetBreadCost()
