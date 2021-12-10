@@ -52,5 +52,22 @@ namespace Bakery.Tests
       //Assert - Confirm functionality works: compare actual output to expected output
       Assert.AreEqual(expectedCost, actualCost);
     }
+
+    [TestMethod]
+    public void GetBreadCost_CostOfOneLoaf_IntOne()
+    {
+      
+    }
   }
 }
+
+  // //Arrange - Gather, declate, create: necessary components for test
+  //     int quantity = 0;
+  //     string breadType = "Baguette";
+  //     int breadPrice = 5;
+  //     int expectedCost = 0;
+  //     Bread newBread = new Bread(breadType, breadPrice);
+  //     // Act - Invoke functionality: ie call method, retrieve property, etc
+  //     int actualCost = GetBreadCost();
+  //     //Assert - Confirm functionality works: compare actual output to expected output
+  //     Assert.AreEqual(expectedCost, actualCost);
