@@ -17,7 +17,7 @@ public class Bread
     {
       if (BreadQuantity > 0 && BreadQuantity % 3 == 0)
       {
-        return 5;
+        return 10;
       }
       else
       {
