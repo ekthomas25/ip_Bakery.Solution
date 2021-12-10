@@ -11,7 +11,7 @@ namespace Bakery.Tests
     [TestMethod]
     public void BreadConstructor_CreateInstanceOfBread_Bread()
     {
-      Bread newBread = new Bread("Baguette");
+      Bread newBread = new Bread("Baguette", 5);
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
     [TestMethod]
@@ -19,11 +19,25 @@ namespace Bakery.Tests
     {
       //Arrange - Gather, declate, create: necessary components for test
       string breadType = "Baguette";
-      Bread newBread = new Bread(breadType);
+      int breadPrice = 5;
+      Bread newBread = new Bread(breadType, breadPrice);
       // Act - Invoke functionality: ie call method, retrieve property, etc
       string result = newBread.BreadType;
       //Assert - Confirm functionality works: compare actual output to expected output
       Assert.AreEqual(breadType, result);
+    }
+
+    [TestMethod]
+    public void GetBread_ReturnBreadPrice_Int()
+    {
+      //Arrange - Gather, declate, create: necessary components for test
+      string breadType = "Baguette";
+      int breadPrice = 5;
+      Bread newBread = new Bread(breadType, breadPrice);
+      // Act - Invoke functionality: ie call method, retrieve property, etc
+      int resultPrice = newBread.BreadPrice;
+      //Assert - Confirm functionality works: compare actual output to expected output
+      Assert.AreEqual(breadPrice, resultPrice);
     }
   }
 }
