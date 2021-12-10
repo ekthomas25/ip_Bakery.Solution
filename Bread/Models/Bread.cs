@@ -6,12 +6,17 @@ namespace Bakery.Models
 public class Bread
   {
     public string BreadType { get; }
-    public Bread(string breadType)
+    public int BreadPrice { get; }
+    public Bread(string breadType, int breadPrice)
     {
       BreadType = breadType;
+      BreadPrice = breadPrice;
     }
+
+    
   }
 }
+
 
 /*
 
