@@ -15,13 +15,16 @@ public class Bread
 
     public int GetBreadCost()
     {
-      if (BreadQuantity > 0 && BreadQuantity % 3 == 0)
+      if (BreadQuantity >= 0)
       {
-        return 10;
+        int remainderNoDeal = (BreadQuantity % 3);
+        int numberOfDeals = (BreadQuantity - (BreadQuantity % 3))/3;
+        int dealLoaves = ((BreadQuantity - remainderNoDeal) - numberOfDeals);
+        return (dealLoaves + remainderNoDeal) * BreadPrice;
       }
       else
       {
-      return BreadPrice * BreadQuantity;
+      return 0;
       }
     }
   }
@@ -68,7 +71,7 @@ loavesDiv3 = 2 = 6/3
 dealLoaves = 4 = 6 - 2
 4 * $5 = $20
 +
-2 * $5 = $10
+remainder2 * $5 = $10
 $30 = loavesCost
 
 */
