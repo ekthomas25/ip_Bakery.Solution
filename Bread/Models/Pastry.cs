@@ -8,7 +8,7 @@ namespace Bakery.Models
     public Pastry(int pastryQty, int pastryPrice)
     {
       PastryQty = pastryQty;
-      PastryPrice = 1000;
+      PastryPrice = 2;
     }
   }
 }
