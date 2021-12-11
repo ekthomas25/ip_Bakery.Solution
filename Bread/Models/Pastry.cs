@@ -3,7 +3,13 @@ namespace Bakery.Models
 {
  public class Pastry
   {
-    
+   public int PastryQty { get; }
+    public int PastryPrice { get; }
+    public Pastry(int pastryQty, int pastryPrice)
+    {
+      PastryQty = 2;
+      PastryPrice = 100;
+    }
   }
 }
 
