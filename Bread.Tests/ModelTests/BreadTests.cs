@@ -17,99 +17,76 @@ namespace Bakery.Tests
     [TestMethod]
     public void GetBread_ReturnBreadQuantity_Int()
     {
-      //Arrange - Gather, declate, create: necessary components for test
       int breadQuantity = 8;
       int breadPrice = 5;
       Bread newBread = new Bread(breadQuantity, breadPrice);
-      // Act - Invoke functionality: ie call method, retrieve property, etc
+
       int result = newBread.BreadQuantity;
-      //Assert - Confirm functionality works: compare actual output to expected output
+      
       Assert.AreEqual(breadQuantity, result);
     }
 
     [TestMethod]
     public void GetBread_ReturnBreadPrice_Int()
     {
-      //Arrange - Gather, declate, create: necessary components for test
       int breadQuantity = 8;
       int breadPrice = 5;
       Bread newBread = new Bread(breadQuantity, breadPrice);
 
-      // Act - Invoke functionality: ie call method, retrieve property, etc
       int resultPrice = newBread.BreadPrice;
 
-      //Assert - Confirm functionality works: compare actual output to expected output
       Assert.AreEqual(breadPrice, resultPrice);
     }
     [TestMethod]
     public void GetBreadCost_CostOfNoBread_IntZero()
     {
-    //   //Arrange - Gather, declate, create: necessary components for test
       int breadQuantity = 0;
       int breadPrice = 5;
       Bread newBread = new Bread(breadQuantity, breadPrice);
       int expectedCost = 0;
 
-    //   // Act - Invoke functionality: ie call method, retrieve property, etc
     int actualCost = newBread.GetBreadCost();
-    //   //Assert - Confirm functionality works: compare actual output to expected output
+
       Assert.AreEqual(expectedCost, actualCost);
     }
 
     [TestMethod]
     public void GetBreadCost_CostOfOneLoaf_IntFive()
     {
-       //   //Arrange - Gather, declate, create: necessary components for test
       int breadQuantity = 1;
       int breadPrice = 5;
       Bread newBread = new Bread(breadQuantity, breadPrice);
       int expectedCost = 5;
 
-    //   // Act - Invoke functionality: ie call method, retrieve property, etc
     int actualCost = newBread.GetBreadCost();
-    //   //Assert - Confirm functionality works: compare actual output to expected output
+    
       Assert.AreEqual(expectedCost, actualCost);
     }
 
     [TestMethod]
     public void GetBreadCost_CostOfThreeLoaves_IntTen()
     {
-       //   //Arrange - Gather, declate, create: necessary components for test
       int breadQuantity = 3;
       int breadPrice = 5;
       Bread newBread = new Bread(breadQuantity, breadPrice);
       int expectedCost = 10;
 
-    //   // Act - Invoke functionality: ie call method, retrieve property, etc
     int actualCost = newBread.GetBreadCost();
-    //   //Assert - Confirm functionality works: compare actual output to expected output
+    
       Assert.AreEqual(expectedCost, actualCost);
     }
 
     [TestMethod]
     public void GetBreadCost_CostOfFourLoaves_IntFifteen()
     {
-      //   //Arrange - Gather, declate, create: necessary components for test
       int breadQuantity = 4;
       int breadPrice = 5;
       Bread newBread = new Bread(breadQuantity, breadPrice);
       int expectedCost = 15;
 
-      // Act - Invoke functionality: ie call method, retrieve property, etc
       int actualCost = newBread.GetBreadCost();
-      //Assert - Confirm functionality works: compare actual output to expected output
+      
       Assert.AreEqual(expectedCost, actualCost);
     }
   }
 }
-
-  // //Arrange - Gather, declate, create: necessary components for test
-  //     int quantity = 0;
-  //     string breadType = "Baguette";
-  //     int breadPrice = 5;
-  //     int expectedCost = 0;
-  //     Bread newBread = new Bread(breadType, breadPrice);
-  //     // Act - Invoke functionality: ie call method, retrieve property, etc
-  //     int actualCost = GetBreadCost();
-  //     //Assert - Confirm functionality works: compare actual output to expected output
-  //     Assert.AreEqual(expectedCost, actualCost);
