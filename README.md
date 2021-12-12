@@ -23,7 +23,6 @@ _Pierre's Bakery is a console application for a bakery that offers baguettes and
 * _[Visual Studio Code](https://code.visualstudio.com/download)_
 * _[Node](https://nodejs.dev/learn/how-to-install-nodejs)_
 * _.NET - [Mac](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.401-macos-x64-installer) or [Windows](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.401-windows-x64-installer)_
-* _
 
 
 
