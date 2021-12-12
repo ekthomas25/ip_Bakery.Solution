@@ -78,5 +78,17 @@ namespace Bakery.Tests
 
       Assert.AreEqual(expectedCost, actualCost);
     }
+        [TestMethod]
+    public void GetPastryCost_CostOfFourPastries_IntSeven()
+    {
+      int pastryQty = 4;
+      int pastryPrice = 2;
+      Pastry newPastry = new Pastry(pastryQty, pastryPrice);
+      int expectedCost = 7;
+
+      int actualCost = newPastry.GetPastryCost();
+
+      Assert.AreEqual(expectedCost, actualCost);
+    }
   }
 }
