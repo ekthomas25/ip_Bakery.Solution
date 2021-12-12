@@ -43,13 +43,25 @@ namespace Bakery.Tests
     public void GetPastryCost_CostOfNoPastry_IntZero()
     {
       int pastryQty = 0;
-      int pastryPrice = 5;
+      int pastryPrice = 0;
       Pastry newPastry = new Pastry(pastryQty, pastryPrice);
       int expectedCost = 0;
 
       // Act - Invoke functionality: ie call method, retrieve property, etc
       int actualCost = newPastry.GetPastryCost();
       //Assert - Confirm functionality works: compare actual output to expected output
+      Assert.AreEqual(expectedCost, actualCost);
+    }
+    [TestMethod]
+    public void GetPastryCost_CostOfOnePastry_IntTwo()
+    {
+      int pastryQty = 1;
+      int pastryPrice = 2;
+      Pastry newPastry = new Pastry(pastryQty, pastryPrice);
+      int expectedCost = 2;
+
+      int actualCost = newPastry.GetPastryCost();
+
       Assert.AreEqual(expectedCost, actualCost);
     }
   }
