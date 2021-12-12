@@ -17,9 +17,13 @@ namespace Bakery.Models
       {
       return (((PastryQty - (PastryQty % 3))/3)*5) + ((PastryQty % 3) * PastryPrice);
       }
-      else
+      else if (PastryQty >= 0 && PastryQty < 3)
       {
         return PastryQty*PastryPrice;
+      }
+      else
+      {
+        return 0;
       }
     }
   }
