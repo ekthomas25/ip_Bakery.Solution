@@ -52,6 +52,7 @@ namespace Bakery.Tests
       //Assert - Confirm functionality works: compare actual output to expected output
       Assert.AreEqual(expectedCost, actualCost);
     }
+
     [TestMethod]
     public void GetPastryCost_CostOfOnePastry_IntTwo()
     {
@@ -59,6 +60,19 @@ namespace Bakery.Tests
       int pastryPrice = 2;
       Pastry newPastry = new Pastry(pastryQty, pastryPrice);
       int expectedCost = 2;
+
+      int actualCost = newPastry.GetPastryCost();
+
+      Assert.AreEqual(expectedCost, actualCost);
+    }
+
+    [TestMethod]
+    public void GetPastryCost_CostOfThreePastries_IntFive()
+    {
+      int pastryQty = 3;
+      int pastryPrice = 2;
+      Pastry newPastry = new Pastry(pastryQty, pastryPrice);
+      int expectedCost = 5;
 
       int actualCost = newPastry.GetPastryCost();
 
