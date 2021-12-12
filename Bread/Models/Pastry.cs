@@ -13,7 +13,7 @@ namespace Bakery.Models
 
     public int GetPastryCost()
     {
-      return 0;
+      return PastryQty*PastryPrice;
     }
   }
 }
