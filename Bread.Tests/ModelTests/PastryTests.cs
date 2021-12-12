@@ -90,5 +90,17 @@ namespace Bakery.Tests
 
       Assert.AreEqual(expectedCost, actualCost);
     }
+        [TestMethod]
+    public void GetPastryCost_CostOfNegativePastries_IntZero()
+    {
+      int pastryQty = -3;
+      int pastryPrice = 2;
+      Pastry newPastry = new Pastry(pastryQty, pastryPrice);
+      int expectedCost = 0;
+
+      int actualCost = newPastry.GetPastryCost();
+
+      Assert.AreEqual(expectedCost, actualCost);
+    }
   }
 }
