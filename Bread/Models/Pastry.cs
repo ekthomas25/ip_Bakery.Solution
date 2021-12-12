@@ -1,9 +1,9 @@
 
 namespace Bakery.Models
 {
- public class Pastry
+  public class Pastry
   {
-   public int PastryQty { get; }
+    public int PastryQty { get; }
     public int PastryPrice { get; }
     public Pastry(int pastryQty, int pastryPrice)
     {
