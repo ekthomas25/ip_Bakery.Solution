@@ -10,6 +10,11 @@ namespace Bakery.Models
       PastryQty = pastryQty;
       PastryPrice = 2;
     }
+
+    public int GetPastryCost()
+    {
+      return -1;
+    }
   }
 }
 
